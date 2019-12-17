@@ -1,0 +1,13 @@
+<h1> Employee Info: </h1>
+<ul>
+    <li>FirstName: <%= @employee.first_name %> </li>
+    <li>LastName: <%= @employee.last_name %></li>
+    <li>Alias: <%= @employee.alias %></li>
+    <li>Title: <%= @employee.title %></li>
+    <li>Office: <%= @employee.office %></li>
+    <img src= "<%= @employee.img_url %>" alt=<%= @employee.first_name %> height="500px" width='700px'> 
+</ul>
+
+<%# <%= link_to 'Edit', edit_employee_path(@employee) %>
+
+<%= button_to 'Edit', edit_employee_path(@employee), method: :get %>
